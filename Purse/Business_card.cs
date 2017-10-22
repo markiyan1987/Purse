@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Purse
 {
-    class Business_card:Card
+    class Business_card: ICard
     {
     }
 }

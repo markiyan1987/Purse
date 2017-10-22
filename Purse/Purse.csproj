@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Business_card.cs" />
-    <Compile Include="Card.cs" />
+    <Compile Include="ICard.cs" />
     <Compile Include="Credit_card.cs" />
     <Compile Include="Gold_card.cs" />
     <Compile Include="Money.cs" />

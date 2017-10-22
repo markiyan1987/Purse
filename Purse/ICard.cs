@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Purse
 {
-    interface Card
+    interface ICard
     {
         double Balance();
         double Income();
