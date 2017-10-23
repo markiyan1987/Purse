@@ -1,1 +1,6 @@
 C:\Users\Markiyan\SkyDrive\Навчання\_GIT\Purse\Purse\Purse\bin\Debug\Purse.exe.config
+D:\GitHub\Purse\Purse\bin\Debug\Purse.exe.config
+D:\GitHub\Purse\Purse\bin\Debug\Purse.exe
+D:\GitHub\Purse\Purse\bin\Debug\Purse.pdb
+D:\GitHub\Purse\Purse\obj\Debug\Purse.exe
+D:\GitHub\Purse\Purse\obj\Debug\Purse.pdb
