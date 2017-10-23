@@ -8,7 +8,7 @@ namespace Purse
 {
     class Purse
     {
-        List<Card> all_cards = new List<Card>();
+        List<ICard> all_cards = new List<ICard>();
         public void Add_card(ICard card)
         {
             all_cards.Add(card);

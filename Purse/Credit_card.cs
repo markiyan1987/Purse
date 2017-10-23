@@ -32,7 +32,8 @@ namespace Purse
 
         public void Get_cash(double sum)
         {
-            if (Cash <= -50000) { Console.WriteLine("Your limit is over"); }
+            if (Cash <= -50000) { Console.WriteLine("Your limit is over"); return; }
+            if (Cash - sum < -5000)  Console.WriteLine("Not enough money. Out of limit");
             else
             {
                 Cash -= sum;
