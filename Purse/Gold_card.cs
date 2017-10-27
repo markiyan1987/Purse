@@ -8,34 +8,57 @@ namespace Purse
 {
     class Gold_card : ICard
     {
+        public string Name { get; set; }
+        public double Cash { set; get; }
+        double income_sum=0;
+        double outlay_sum=0;
+        public Gold_card() {
+            Cash=0;
+            Name="Gold_card";
+        }
+        public Gold_card(string name, double cash)
+        {   this.Cash = cash;
+            this.Name = name;
+            income_sum = +Cash;
+        }
         public void Add_money(double sum)
         {
-            throw new NotImplementedException();
+            Cash += sum;
+            income_sum += sum;
         }
 
         public double Balance()
         {
-            throw new NotImplementedException();
+            return Cash;
         }
 
         public string Card_name()
         {
-            throw new NotImplementedException();
+            return Name;
         }
 
         public void Get_cash(double sum)
         {
-            throw new NotImplementedException();
+            if (Cash <= -150000) { Console.WriteLine("Your limit is over");
+                return; }
+            if (Cash - sum <= -150000)  Console.WriteLine("Not enough money. Out of limit");
+            else
+            {
+                Cash -= sum;
+                outlay_sum += sum;
+            }
         }
 
         public double Income()
         {
-            throw new NotImplementedException();
+
+            return income_sum;
         }
 
         public double Outlay()
         {
-            throw new NotImplementedException();
+            return outlay_sum;
         }
+       
     }
 }
